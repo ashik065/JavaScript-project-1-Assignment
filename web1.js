@@ -5,6 +5,7 @@ const Birthday = document.querySelector("#birthday1")
 const Age = document.querySelector("#age1")
 const button = document.querySelector(".btn")
 const cardContent = document.querySelector("#card-body1")
+const cardContent2 = document.querySelector(".card-header")
 
 button.addEventListener('click',function(event)
 {
@@ -18,10 +19,11 @@ button.addEventListener('click',function(event)
     else
     {
         const newCard = document.createElement('div');
+        const newCard2 = document.createElement('div');
     
     const newName = document.createElement('h3')
     newName.innerHTML = Name.value
-    newCard.appendChild(newName)
+    newCard2.appendChild(newName)
 
     const newBirthday = document.createElement('h3')
     newBirthday.innerHTML = Birthday.value
@@ -34,6 +36,7 @@ button.addEventListener('click',function(event)
 
 
     cardContent.appendChild(newCard)
+    cardContent2.appendChild(newCard2)
 
 
 }
